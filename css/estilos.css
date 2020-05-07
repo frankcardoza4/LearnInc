@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.parrafo {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+body {
+    background: #173944;
+    font-family: 'Roboto', sans-serif;
+    line-height: 18px;
+
+}
+
+.height {
+    height: 6.5rem;
+    width: 100%;
+    background: white;
+    border-bottom: solid rgb(15, 15, 15) 0.5rem;
+}
+
+a {
+
+    text-decoration: none !important;
+    color: white;
+}
+
+.btn-menu {
+    padding: 20px;
+    display: none;
+    background: #0d2c44;
+    color: white;
+}
+
+.btn-menu .icono {
+    float: right;
+}
+
+
+
+.contenedor-menu {
+    width: 20%;
+    min-width: 300px;
+    margin: 0 !important;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    line-height: 18px;
+    outline: 0;
+    position: absolute;
+
+}
+
+.contenido {
+
+    background: white;
+    display: block;
+    position: absolute;
+    left: 300px;
+    width: 75%;
+    height: 100%;
+    border: solid black 0.5rem;
+    border-top: none;
+
+}
+
+.contenedor-menu .menu {
+    width: 100%;
+}
+
+.contenedor-menu ul {
+    list-style: none;
+}
+
+.contenedor-menu .menu li a {
+    color: #494949;
+    display: block;
+    padding: 15px 20px;
+    background: hsl(0, 100%, 99%);
+    border-left: solid rgb(126, 124, 124) 0.5rem;
+    border-right: solid rgb(126, 124, 124) 0.5rem;
+}
+
+.contenedor-menu .menu>li>a:hover {
+    background: #43c7f3;
+    color: white;
+}
+
+.contenedor-menu .menu li a:hover {
+    background: #43c7f3;
+    color: white;
+}
+
+.contenedor-menu .menu .icono {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.contenedor-menu .menu .icono.izquierda {
+    float: left;
+    margin-right: 10px;
+}
+
+.contenedor-menu .menu .icono.derecha {
+    float: right;
+    margin-right: 10px;
+}
+
+.contenedor-menu .menu ul {
+    display: none;
+
+}
+
+.contenedor-menu .menu ul li a {
+    background: #424242;
+    color: #e9e9e9;
+}
+
+.contenedor-menu .menu .activado>a {
+    background: #0b2027;
+    color: white;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .contenedor-menu {
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .contenedor-menu .menu {
+        display: none;
+    }
+}
